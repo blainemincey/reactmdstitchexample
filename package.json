@@ -1,0 +1,43 @@
+{
+  "name": "stitchmdexample-template",
+  "version": "0.1.0",
+  "description": "Simple example of using React, Material Design, and MongoDB Stitch",
+  "author": "Blaine Mincey",
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "private": true,
+  "dependencies": {
+    "@material-ui/core": "^3.7.0",
+    "@material-ui/icons": "^3.0.1",
+    "mongodb-stitch-browser-sdk": "^4.1.1",
+    "node-sass-chokidar": "^1.3.4",
+    "npm-run-all": "^4.1.5",
+    "react": "^16.6.3",
+    "react-dom": "^16.6.3",
+    "react-md": "^1.9.2",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "webfontloader": "^1.6.28"
+  },
+  "scripts": {
+    "build-css": "node-sass-chokidar --include-path ./node_modules src/ -o src/",
+    "watch-css": "npm run build-css && npm run build-css -- --watch --recursive",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "start-js": "react-scripts start",
+    "start": "npm-run-all -p watch-css start-js",
+    "build": "npm run build-css && react-scripts build"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}

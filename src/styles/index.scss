@@ -1,0 +1,14 @@
+@import 'globals';
+
+@include react-md-everything;
+
+
+body {
+  margin: 0;
+}
+
+.footer {
+  background-image: initial;
+  background-color: #61dafb;
+  text-align: right;
+}
